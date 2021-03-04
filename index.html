@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Navigational bar for page -->
+<nav id="navbar">
+  <header>HTML Basics Documentation</header>
+  
+  <ul>
+    <li><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#editors">Editors</a></li>    
+    <li><a class="nav-link" href="#structure">Structure</a></li>
+    <li><a class="nav-link" href="#elements">Elements</a></li>
+    <li><a class="nav-link" href="#responsive">Responsive</a></li>    
+  </ul> 
+  </nav>
+
+<!-- Main doc of page -->
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+             <article>
+               <p>HTML or Hyper Text Markup Language, is the markup language in which most websites are written in. It consists of a series of elements which creates and describes a structure of a webpage. These elements tell a browser what and how to display certain information, however CSS is used to make that information more visually appealing which will not be covered in this documentation. </p>   
+    </article>
+  </section> 
+    
+   <section class="main-section" id="editors">
+      <header>Editors</header>
+             <article>
+               <p>When talking about editors with HTML or any coding language, they refer to the place you write your code. With HTML there are many editors to choose from ranging in complexity, to learn HTML however a simple text editor is all that is needed. <br></p> <p>Some of the most popular editors for HTML include:</p>   
+        <ul>
+          <li>Notepad++</li>
+          <li>Atom</li>
+          <li>Sublime Text</li>
+          <li>Komodo Edit</li>
+          <li>Brackets</li>
+          <li>Visual Studio Code</li>
+         </ul>
+               <p>There are many other editors out there and being able to try different ones and find which one works best for you and is easiest to work with and understand is key in succeding.</p>
+    </article>
+  </section>    
+    
+   <section class="main-section" id="structure">
+      <header>Structure</header>
+             <article>
+               <p>Having a consistent structure for HTML is best practice for both reading as well as an operational standpoint. Every page in HTML should follow some basic form of the same structure, with everything being contained in the HTML element, and inside that you have the head element followed by the body element followed by a footer element. An example of such:</p>
+               <code>&lt;html&gt;
+                 &lt;head&gt; &lt;/head&gt;
+                 &lt;body&gt; &lt;/body&gt;
+                 &lt;/html&gt;</code>               
+<p>Of course with all of this it's not required to have all of these elements inside of your page, as well as you have the ability to add additional elements inside of the listed ones above.</p>   
+    </article>
+  </section>
+ 
+<section class="main-section" id="elements">
+      <header>Elements</header>
+             <article>
+               <p>HTML is made up of elements, it is what gives it it's structure consisting of a start tag, content, and the end tag. For example if we wanted to make a header of:</p>              
+                 <code> Hello World</code>
+<p>We would put it between a start and end tag as such:</p>
+                 <code> &lt;h1&gt; Hello World&lt;/h1&gt;</code>
+<p>There are many other elements to use to complete various other functions in HTML.</p>   
+    </article>
+  </section>
+
+   <section class="main-section" id="responsive">
+      <header>Responsive</header>
+             <article>
+               <p>Having a responsive web page is essential in today's day and age, being able to easily make a responsive page is extremely useful. Responsive web design allows for a webpage to resize automatically or enlarge and change the page based on what size screen is reading said web page such as on phones, tablets or computers. Making a page responsive can be done in both HTML and CSS through various means however in this demonstration, only HTML will be looked at. In order to create a basic responsive website in HTML you will need to add a meta tag which will look like:</p>
+                 <code> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+<p>Having this in the head would help the page scale to any size screen, this is one of many ways to help scale a web page. For instance if you're looking to scale a picture for certain sizes the following HTML would be added:</p>  
+               <code> &lt;source srcset="picture.jpg" media="(max-width: 600px)"&gt;</code> 
+               <p> This will resize the image at 600px for the screen size.</p>               
+    </article>
+  </section>
+    
+  </main>
+<!-- partial -->
+  
+</body>
+</html>
